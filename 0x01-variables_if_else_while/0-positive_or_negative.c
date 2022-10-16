@@ -3,12 +3,12 @@
 #include <time.h>
 /**
  * main - program entry point
- * Return: 0 - no error,non zero value if error
+ * Return: 0 -no error,non zero value if error
  **/
 int main(void)
 {
-        int n;
-	srand(time(0));
+       int n;
+       srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
@@ -18,7 +18,7 @@ int main(void)
 	{
 		printf("%d is negative\n", n);
 	}
-	else if (n == 0)
+	else  (n == 0)
 	{
 		printf("%d is zero\n", n);
 	}
