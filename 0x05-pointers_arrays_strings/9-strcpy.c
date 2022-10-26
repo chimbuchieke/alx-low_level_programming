@@ -2,21 +2,20 @@
 #include <stdio.h>
 
 /**
- * _strcpy - copies the string pointed to by src
- * @dest: destination
- * @src: source
- * Return: string
- */
+* _strcpy - copies the string pointed to by src
+* @dest: destination
+* @src: source
+* Return: string
+*/
 char *_strcpy(char *dest, char *src)
 {
-	int len = 0;
-
-	while (*(src + len) != '\0')
+	int count = 0;
+	while (count >= 0)
 	{
-		*(dest * len) = *(src + len);
-		len++;
+		*(dest + count) = *(src + count);
+		if (*(src + count) == '\0')
+			break;
+		count++;
 	}
-
-	*(dest + len) = '\0';
 	return (dest);
 }
