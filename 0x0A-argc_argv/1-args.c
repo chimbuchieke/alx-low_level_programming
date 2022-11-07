@@ -1,14 +1,15 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - a program that prints the # of args passed to it
- * @argc: the # of args
- * @argv: the name of args
+ * @argc: count argument
+ * @argv: arguments
  * Return: 0
  */
-int main(int argc, _attribute_((unused))char **argv)
+int main(int argc, char *argv[])
 {
-	printf("%d\n", argc - 1);
+	(void) argv; /*ignore argv*/
+	printf("%i\n", argc - 1);
+
 	return (0);
 }
